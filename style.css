@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Times New Roman', Times, serif; /* Serif font */
+  background-color: #000000; /* Black background */
+  color: #f0f0f0; /* Light text color for better readability */
+  font-size: 18px; /* Increased base font size */
+}
+
+header {
+  background-color: #800000; /* Dark maroon background */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 24px; /* Increased font size */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px; /* Increased font size */
+}
+
+header p {
+  margin: 10px 0;
+  font-size: 20px; /* Increased font size */
+}
+
+main {
+  padding: 0; /* Removed padding to avoid excessive blank space */
+  background-color: #1a1a1a; /* Slightly lighter than body for contrast */
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Times New Roman', Times, serif; /* Serif font */
+  font-size: 40px; /* Increased font size */
+  color: white;
+  font-weight: 900; /* Very bold */
+}
+
+.navbar {
+  background-color: #800000; /* Dark maroon background for navbar */
+  overflow: hidden;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Center the navbar items */
+}
+
+.navbar li {
+  flex: 1;
+  text-align: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  font-weight: 900; /* Very bold */
+  font-size: 26px; /* Increased font size */
+  font-family: 'Times New Roman', Times, serif; /* Serif font */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar a:hover {
+  background-color: #a52a2a; /* Lighter maroon for hover effect */
+}
+
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    text-align: center;
+  }
+}
+
+/* Styling for sections */
+.section.scrollspy {
+  padding: 0; /* Removed padding to avoid excessive blank space */
+  background-color: #000000; /* Black background */
+}
+
+.page-title {
+  background-color: #8B0000; /* Maroon background */
+  color: #fff; /* White text */
+  padding: 10px 20px; /* Padding around the text */
+  margin-bottom: 20px; /* Space below the heading */
+  font-size: 36px; /* Increased font size */
+  text-align: left; /* Align text to the left */
+  width: 100%; /* Full width */
+  display: block; /* Ensure it takes the full width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  font-weight: 900; /* Very bold */
+}
+
+.container.flow-text {
+  max-width: 1200px; /* Increased width of the container */
+  margin: 0 auto; /* Center the container */
+  text-align: left; /* Left-align the text */
+}
+
+.container.flow-text p {
+  margin-bottom: 20px; /* Space between paragraphs */
+  line-height: 1.6; /* Line height for better readability */
+  font-size: 18px; /* Increased font size */
+}
+
+/* Home section styling */
+#intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start */
+  padding: 0; /* Removed padding to avoid excessive blank space */
+  margin: 0; /* Remove margin */
+  width: 100%; /* Ensure the section takes the full width */
+  background-color: transparent; /* Remove background color */
+}
+
+.profile-container {
+  display: flex;
+  align-items: flex-start; /* Align items to the start */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  width: 100%; /* Ensure the container takes the full width */
+}
+
+.profile-picture {
+  flex: 0 0 auto; /* Ensure the image takes only the space it needs */
+  width: 400px; /* Increased width for larger image */
+  height: 400px; /* Maintain 1:1 aspect ratio by setting height equal to width */
+  margin-right: 20px; /* Space between the picture and text */
+  padding: 0; /* Remove padding */
+  overflow: hidden; /* Ensure no overflow of image */
+  position: relative; /* Position relative to its normal position */
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the whole container while maintaining aspect ratio */
+  display: block;
+}
+
+.intro-text {
+  flex: 1;
+  text-align: left; /* Left-align the text */
+  padding: 0 10px; /* Add padding to the left and right of the text */
+  font-size: 18px; /* Increased font size */
+}
+
+.intro-container {
+  display: flex;
+  align-items: flex-start; /* Align items to the start */
+  margin: 0; /* Remove margin */
+  width: 100%; /* Ensure the container takes the full width */
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
+  }
+
+  .profile-picture {
+    margin-right: 0;
+    margin-bottom: 20px;
+    left: 0; /* Reset left position for smaller screens */
+  }
+
+  .intro-text {
+    text-align: left; /* Left-align text on smaller screens */
+  }
+}
+
+/* Additional styling for cards */
+.card {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Align items to the start */
+  background-color: transparent; /* Remove background color */
+  padding: 0; /* Remove padding */
+}
+
+.card-content {
+  flex: 1;
+  padding: 0; /* Remove padding */
+}
+
+.card-image {
+  flex: 0 0 auto;
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  margin-right: 20px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 20px 0; /* Increased padding to 20px */
+  font-size: 16px; /* Increased font size */
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+footer p {
+  color: maroon; /* Maroon text color */
+  margin: 0;
+}
