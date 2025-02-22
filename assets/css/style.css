@@ -139,12 +139,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .profile-picture {
   flex: 0 0 auto; /* Ensure the image takes only the space it needs */
-  width: 200px; /* Increased width for larger image */
-  height: 200px; /* Maintain 1:1 aspect ratio by setting height equal to width */
+  width: 400px; /* Adjust the width as needed */
+  height: 400px; /* Maintain a 1:1 aspect ratio by setting height equal to width */
   margin-right: 20px; /* Space between the picture and text */
   padding: 0; /* Remove padding */
   overflow: hidden; /* Ensure no overflow of image */
   position: relative; /* Position relative to its normal position */
+  border: 5px solid #8B0000; /* Add a border for the frame */
+  border-radius: 50%; /* Rounded frame */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for depth */
 }
 
 .profile-picture img {
@@ -152,7 +155,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   object-fit: cover; /* Ensure the image covers the whole container while maintaining aspect ratio */
   display: block;
+  border-radius: 50%; /* Ensure the image is rounded */
 }
+
 
 .intro-text {
   flex: 1;
