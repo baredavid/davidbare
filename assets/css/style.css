@@ -139,8 +139,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .profile-picture {
   flex: 0 0 auto; /* Ensure the image takes only the space it needs */
-  width: 400px; /* Adjust the width as needed */
-  height: 400px; /* Maintain a 1:1 aspect ratio by setting height equal to width */
+  width: 200px; /* Adjust the width as needed */
+  height: 200px; /* Maintain a 1:1 aspect ratio by setting height equal to width */
   margin-right: 20px; /* Space between the picture and text */
   padding: 0; /* Remove padding */
   overflow: hidden; /* Ensure no overflow of image */
