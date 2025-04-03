@@ -135,31 +135,84 @@
 
   <!-- Main Content -->
 
-<!-- First Section: Introduction -->
+  <!-- First Section: Introduction -->
 <section id="intro" class="section scrollspy full-height">
   <!-- Overlay for semi-transparent effect -->
   <div class="overlay"></div>
   <div class="col-md-9">
-    <div class="content section-padding valign" style="margin-left: 10%; margin-top: 10px;">
+    <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
       <!-- Profile Picture and Text Container -->
       <div class="intro-container">
         <!-- Profile Picture -->
         <div class="profile-picture">
-          <img src="assets/img/David.jpeg" alt="David Bare">
+          <img src="David.JPG" alt="David Bare">
         </div>
         <!-- Heading and Description -->
         <div class="intro-text">
-          <h4>Hi, I'm <span style="color: maroon;">David Bare.</span></h4>
-          <h5 style="color:#fff"><span class="typing maroon-text" style="font-weight: 200; color: maroon;"></span></h5>
-          <p>
-       A highly motivated MS Business Analytics candidate at USC’s Darla Moore School of Business, with a BS in Actuarial Science from the University of Zimbabwe, and certifications in Google Data Analytics, CFA Data Science, and Business Analytics. As a quantitative analyst, I possess comprehensive mathematical modeling and implementation skills, along with in-depth knowledge of quantitative finance, including Term Structure Models, Financial Derivatives, Risk Management, Time Series, Statistics, Probability Theory, and Stochastic Calculus. 
-      Proficient in Python, R, SQL, and advanced methodologies such as machine learning, predictive modeling, econometrics, and optimization to solve challenges in financial risk, pricing, and strategic decision-making.
-          </p>
+          <h2>Hi, I'm <span style="color: maroon;">David Bare.</span></h2>
+          <div id="rotate" class="rotatortext"> 
+            <h5 style="color:#fff; font-weight: bold; text-align: center;">
+              <span class="fade-text" style="color: maroon;"></span>
+            </h5>
+            <p>
+              A highly motivated MS Business Analytics candidate at USC’s Darla Moore School of Business, 
+              with a BS in Actuarial Science from the University of Zimbabwe, and certifications in Google 
+              Data Analytics, CFA Data Science, and Business Analytics. As a quantitative analyst, I possess 
+              comprehensive mathematical modeling and implementation skills, along with in-depth knowledge 
+              of quantitative finance, including Term Structure Models, Financial Derivatives, Risk Management, 
+              Time Series, Statistics, Probability Theory, and Stochastic Calculus. Proficient in Python, R, SQL, 
+              and advanced methodologies such as machine learning, predictive modeling, econometrics, and 
+              optimization to solve challenges in financial risk, pricing, and strategic decision-making.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+.fade-text {
+  display: inline-block;
+  animation: fadeInOut 2s infinite;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+</style>
+
+<script>
+const jobTitles = [
+  "Actuarial Analyst",
+  "Research Analyst",
+  "Data Analyst",
+  "Business Analyst",
+  "Financial Analyst",
+  "Management Analyst",
+  "Marketing Analyst",
+  "Market Research Analyst",
+  "Operations Analyst",
+  "Operations Research Analyst"
+];
+
+const fadeText = document.querySelector('.fade-text');
+let index = 0;
+
+function updateText() {
+  fadeText.textContent = jobTitles[index];
+  index = (index + 1) % jobTitles.length;
+}
+
+// Initial text
+fadeText.textContent = jobTitles[0];
+
+// Change text every 2 seconds (matching the animation duration)
+setInterval(updateText, 2000);
+</script>
 
  <!-- Experience Section -->
 <section id="experience" class="section scrollspy">
@@ -691,17 +744,7 @@
   </div>
 </footer>
 
-<!-- Typed.js for Typing Effect -->
-<script src="assets/vendor/typed.js/typed.min.js"></script>
-<script type="text/javascript">
-  var typed = new Typed('.typing', {
-    strings: ["Actuarial Analyst", "Research Analyst","Data Analyst","Business Analyst","Financial Analyst","Management Analyst","Marketing Analyst","Market Research Analyst", "Operations Analyst", "Operations Research Analyst"],
-    loop: true,
-    typeSpeed: 80,
-    backSpeed: 40
-  });
-</script>
-
+  
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
@@ -722,8 +765,8 @@
     $('#year').text(new Date().getFullYear());
   })
 
-  // Set the zoom level to 100%
-  document.body.style.zoom = "100%";
+  // Set the zoom level to 90%
+  document.body.style.zoom = "90%";
 </script>
 </body>
 </html>
