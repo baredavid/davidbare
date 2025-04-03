@@ -96,14 +96,22 @@ h1, h2, h3, h4, h5, h6 {
 .page-title {
   background-color: #8B0000; /* Maroon background */
   color: #fff; /* White text */
-  padding: 10px 20px; /* Padding around the text */
+  padding: 5px 20px; /* Reduced vertical padding to 5px, kept horizontal at 20px */
   margin-bottom: 20px; /* Space below the heading */
   font-size: 26px; /* Increased font size */
   text-align: left; /* Align text to the left */
-  width: 100%; /* Full width */
-  display: block; /* Ensure it takes the full width */
+  width: 100%; /* Reverted to original full width */
+  display: block; /* Ensure it takes the full width of its specified size */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
   font-weight: 900; /* Very bold */
+  margin: 0 auto 20px auto; /* Centered with margin-bottom preserved */
+  line-height: 1.2; /* Adjust line height to fit text snugly */
+}
+
+@media (max-width: 600px) {
+  .page-title {
+    padding: 3px 15px; /* Further reduce padding on small screens */
+  }
 }
 
 .container.flow-text {
@@ -145,7 +153,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0; /* Remove padding */
   overflow: hidden; /* Ensure no overflow of image */
   position: relative; /* Position relative to its normal position */
- border: 5px solid #0c0b0b; /* Add a border for the frame */
+  border: 5px solid #0c0b0b; /* Add a border for the frame */
   border-radius: 50%; /* Rounded frame */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for depth */
 }
@@ -157,7 +165,6 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   border-radius: 50%; /* Ensure the image is rounded */
 }
-
 
 .intro-text {
   flex: 1;
