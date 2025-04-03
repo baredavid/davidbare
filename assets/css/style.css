@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0; /* Remove padding */
   overflow: hidden; /* Ensure no overflow of image */
   position: relative; /* Position relative to its normal position */
-  border: 5px solid #8B0000; /* Add a border for the frame */
+ border: 5px solid #0c0b0b; /* Add a border for the frame */
   border-radius: 50%; /* Rounded frame */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for depth */
 }
