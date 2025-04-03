@@ -15,7 +15,7 @@ html, body {
 header {
   background-color: #800000; /* Dark maroon background */
   color: white;
-  padding: 10px 0;
+  padding: 5px 0;
   text-align: center;
   font-size: 24px; /* Increased font size */
 }
@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar a {
   color: white;
   text-decoration: none;
-  padding: 15px;
+  padding: 10px;
   display: block;
   text-align: center;
   font-weight: 900; /* Very bold */
@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: flex-start; /* Align items to the start */
   padding: 0; /* Removed padding to avoid excessive blank space */
   margin: 0; /* Remove margin */
-  width: 100%; /* Ensure the section takes the full width */
+  width: 90%; /* Ensure the section takes the full width */
   background-color: transparent; /* Remove background color */
 }
 
@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: flex-start; /* Align items to the start */
   padding: 0; /* Remove padding */
   margin: 0; /* Remove margin */
-  width: 100%; /* Ensure the container takes the full width */
+  width: 90%; /* Ensure the container takes the full width */
 }
 
 .profile-picture {
