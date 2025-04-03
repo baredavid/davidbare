@@ -38,7 +38,7 @@ main {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Times New Roman', Times, serif; /* Serif font */
-  font-size: 40px; /* Increased font size */
+  font-size: 25px; /* Increased font size */
   color: white;
   font-weight: 900; /* Very bold */
 }
