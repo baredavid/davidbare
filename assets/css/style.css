@@ -17,12 +17,12 @@ header {
   color: white;
   padding: 5px 0;
   text-align: center;
-  font-size: 24px; /* Increased font size */
+  font-size: 26px; /* Increased font size */
 }
 
 header h1 {
   margin: 0;
-  font-size: 36px; /* Increased font size */
+  font-size: 26px; /* Increased font size */
 }
 
 header p {
@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff; /* White text */
   padding: 10px 20px; /* Padding around the text */
   margin-bottom: 20px; /* Space below the heading */
-  font-size: 36px; /* Increased font size */
+  font-size: 26px; /* Increased font size */
   text-align: left; /* Align text to the left */
   width: 100%; /* Full width */
   display: block; /* Ensure it takes the full width */
@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: flex-start; /* Align items to the start */
   padding: 0; /* Removed padding to avoid excessive blank space */
   margin: 0; /* Remove margin */
-  width: 90%; /* Ensure the section takes the full width */
+  width: 100%; /* Ensure the section takes the full width */
   background-color: transparent; /* Remove background color */
 }
 
@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: flex-start; /* Align items to the start */
   padding: 0; /* Remove padding */
   margin: 0; /* Remove margin */
-  width: 90%; /* Ensure the container takes the full width */
+  width: 100%; /* Ensure the container takes the full width */
 }
 
 .profile-picture {
