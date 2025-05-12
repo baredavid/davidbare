@@ -252,3 +252,33 @@ footer p {
   color: maroon; /* Maroon text color */
   margin: 0;
 }
+
+/* Collapsible duties */
+.collapsible-duties {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Show only 2 lines initially */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: maroon;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+/* Skills tags */
+.skills-tags {
+  margin-top: 10px;
+}
+
+.skill-tag {
+  background-color: #800000;
+  color: white;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 3px;
+  display: inline-block;
+}
