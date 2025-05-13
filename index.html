@@ -372,81 +372,96 @@ setInterval(updateText, 2000);
   }
 </style>
 
-    <!-- Projects Section -->
+   <!-- Projects Section -->
 <section id="projects" class="section scrollspy" style="background-color: black;">
   <h3 class="page-title white-text maroon-text">Projects</h3>
   <div class="row">
     <div class="col s12">
-      <!-- Computer Algorithms in online markets -->
+      <!-- Click-Through Rate Prediction using Logistic Regression -->
       <div class="project-item">
         <div class="project-header">
-          <h2 class="project-title">Computer Algorithms in online markets</h2>
+          <h2 class="project-title">Click-Through Rate Prediction using Logistic Regression</h2>
           <span class="expand-icon">+</span>
         </div>
         <div class="project-content">
           <p>
-            Computer algorithms provide great value to businesses and consumers but can also heavily harm their welfare. Even when programmed to help, conceptual or technical deficiencies can cause algorithms to fail or discretely create disparities among consumer groups.
+            Built and evaluated logistic regression models to predict click-through rates using multiple predictors. 
+            Assessed model performance with AIC, sensitivity, specificity, and AUC metrics, demonstrating improved 
+            predictive power with a full model over single-variable models.
           </p>
           <p>
-            In a first project, I propose an auditing platform to collect data from online retailers and platforms in a way such that the data can be used to assess both whether the algorithms create disparate impact and also whether any disparate impact is associated with business necessities. The application of the platform is illustrated with the case of a leading online retailer, whose algorithms do appear to create disparities in prices although much of those disparities appear to be consistent with business necessities.
-          </p>
-          <p>
-            The data for this project are available <a href="#" class="highlight">here</a> together with their <a href="#" class="highlight">data dictionary</a>.
-          </p>
-          <p>
-            In a second project (work in progress), I separate the decisions made by personalization algorithms from the localization decisions of retailers and explore whether the personalization algorithms induce disparities by themselves. Preliminary results from the analysis of a pricing algorithm suggest that, after accounting for costs, the algorithm maximizes profits for the larger groups of minority consumers but fails to accurately infer the price sensitivities of the smaller minority groups.
+            <a href="path/to/David%20Bare%20-%20Logistic%20Regression%20Assignment%207-%20R%20Notebook.pdf" class="highlight" target="_blank">View Full Analysis</a>
           </p>
         </div>
       </div>
 
-      <!-- Socioeconomics, disparities, and consumer markets -->
+      <!-- Causal Impact Analysis of Search Advertising -->
       <div class="project-item">
         <div class="project-header">
-          <h2 class="project-title">Socioeconomics, disparities, and consumer markets</h2>
+          <h2 class="project-title">Causal Impact Analysis of Search Advertising</h2>
           <span class="expand-icon">+</span>
         </div>
         <div class="project-content">
           <p>
-            This project explores the socioeconomic factors influencing consumer markets and the disparities that arise within them. It aims to understand how different socioeconomic backgrounds affect consumer behavior and market dynamics.
+            Analyzed the causal effects of branded and non-branded search advertising using 
+            Difference-in-Differences methodology. Calculated the corrected ROI and demonstrated 
+            the importance of isolating true advertising impact by controlling for confounding factors.
+          </p>
+          <p>
+            <a href="path/to/David%20Bare%20DiD%20Assignment.pdf" class="highlight" target="_blank">View Full Analysis</a>
           </p>
         </div>
       </div>
 
-      <!-- Social rank, wealth signaling, and consumption -->
+      <!-- Conversion Rate Optimization through Statistical Testing -->
       <div class="project-item">
         <div class="project-header">
-          <h2 class="project-title">Social rank, wealth signaling, and consumption</h2>
+          <h2 class="project-title">Conversion Rate Optimization through Statistical Testing</h2>
           <span class="expand-icon">+</span>
         </div>
         <div class="project-content">
           <p>
-            This project investigates how social rank and wealth signaling influence consumption patterns. It delves into the psychological and sociological aspects of consumer behavior and how wealth signaling impacts market trends.
+            Designed and executed statistical tests to evaluate the effectiveness of marketing campaigns. 
+            Conducted hypothesis testing and calculated confidence intervals to assess conversion rate differences 
+            between control and treatment groups, providing data-driven recommendations for campaign optimization.
+          </p>
+          <p>
+            <a href="path/to/David%20Bare%20A_B%20Testing%20Assignment.pdf" class="highlight" target="_blank">View Full Analysis</a>
           </p>
         </div>
       </div>
 
-      <!-- Online retailing -->
+      <!-- Sentiment Analysis of Customer Reviews -->
       <div class="project-item">
         <div class="project-header">
-          <h2 class="project-title">Online retailing</h2>
+          <h2 class="project-title">Sentiment Analysis of Customer Reviews</h2>
           <span class="expand-icon">+</span>
         </div>
         <div class="project-content">
           <p>
-            This project focuses on the dynamics of online retailing, exploring how digital platforms have transformed the retail landscape. It examines the strategies employed by online retailers to attract and retain customers.
+            Developed a sentiment analysis pipeline to classify Yelp customer reviews using Natural Language Processing techniques. 
+            Performed text preprocessing, sentiment scoring, and data visualization to uncover key insights about customer satisfaction and pain points.
+          </p>
+          <p>
+            <a href="path/to/Sentiment%20Analysis%20-%20Yelp.nb.html" class="highlight" target="_blank">View Full Analysis</a>
           </p>
         </div>
       </div>
 
-      <!-- Projects on other topics -->
+      <!-- Customer Retention Modeling using Hidden Markov Models -->
       <div class="project-item">
         <div class="project-header">
-          <h2 class="project-title">Projects on other topics</h2>
+          <h2 class="project-title">Customer Retention Modeling using Hidden Markov Models</h2>
           <span class="expand-icon">+</span>
         </div>
         <div class="project-content">
           <p>
-            This section includes various projects on diverse topics not covered in the above categories. These projects span a range of interests and industries, showcasing a broad spectrum of research and development efforts.
+            Modeled customer retention behavior using Hidden Markov Models to identify hidden states 
+            of customer engagement and predict future retention probabilities. Provided actionable insights 
+            for customer segmentation and targeted retention strategies.
+          </p>
+          <p>
+            <a href="path/to/Customer-Retention-Analysis-Using-Hidden-Markov-Models.html" class="highlight" target="_blank">View Full Analysis</a>
           </p>
         </div>
       </div>
@@ -458,19 +473,18 @@ setInterval(updateText, 2000);
   .project-content {
     display: none;
     padding: 10px;
-    background-color: #000000; /* Black background for content */
-    color: #f0f0f0; /* Light text for readability */
+    background-color: #000000;
   }
   .project-header {
     cursor: pointer;
     padding: 8px;
-    background-color: #000000; /* Black background for header */
+    background-color: #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1px;
     color: white;
-    border-bottom: 1px solid #333; /* Thin separator line */
+    border: 1px solid #222;
   }
   .expand-icon {
     font-size: 18px;
@@ -480,13 +494,12 @@ setInterval(updateText, 2000);
     margin: 0;
     font-size: 16px;
     color: white;
-    font-weight: bold;
   }
   .white-text {
     color: white;
   }
   .maroon-text {
-    color: #800000; /* Maroon color */
+    color: #800000;
   }
   .section.scrollspy {
     padding: 20px 0;
